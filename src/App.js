@@ -1,9 +1,13 @@
 import "./styles/main.scss";
 
+import Layout from "components/Layout/Layout";
+
 function App() {
   return (
     <div className="App">
-      <h1>Hello Bratva!!!</h1>
+        <Layout>
+
+        </Layout>
     </div>
   );
 }
