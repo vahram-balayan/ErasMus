@@ -1,7 +1,7 @@
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
 
-import styles from "./layout.module.scss";
+import styles from "./Layout.module.scss";
 
 const Layout = ({children}) => {
     return (

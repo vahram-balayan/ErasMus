@@ -5,6 +5,9 @@ const Footer = () => {
     return (
         <footer className={styles.footer}>
             Footer
+            <div className={styles.left}>
+
+            </div>
         </footer>
     );
 };

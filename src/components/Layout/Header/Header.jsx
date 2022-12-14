@@ -1,9 +1,12 @@
-import React from 'react';
+import styles from "./Header.module.scss";
 
 const Header = () => {
     return (
-        <header>
+        <header className={`flex align-center ${styles.header}`}>
             Header
+            <div className={styles.left}>
+
+            </div>
         </header>
     );
 };
