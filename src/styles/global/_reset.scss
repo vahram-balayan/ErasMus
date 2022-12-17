@@ -22,7 +22,9 @@ ol, ul, menu {
 }
 
 /* For images to not be able to exceed their container */
-img {
+img,
+picture {
+  display: block;
   max-width: 100%;
 }
 
