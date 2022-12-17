@@ -1,0 +1,10 @@
+@use "sass:list";
+@use "sass:math";
+@use "sass:string";
+@use "sass:map";
+
+@function to-rems($value) {
+  // divide to 10 as in body base font size is set 62.5%
+  $value-rems: math.div($value, 10px) * 1rem;
+  @return $value-rems;
+}
