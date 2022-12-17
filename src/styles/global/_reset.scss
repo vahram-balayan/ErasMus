@@ -30,7 +30,13 @@ img {
   cursor: pointer;
 }
 
+:where(input, select, textarea, button) {
+  font: inherit;
+  line-height: inherit;
+}
+
 // https://css-tricks.com/standardizing-focus-styles-with-css-custom-properties/
+
 :where(a, button, input, textarea, summary, [tabindex="0"]) {
   --outline-thickness: max(2px, 0.08em);
   --outline-style: solid;
