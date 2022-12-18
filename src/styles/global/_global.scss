@@ -6,6 +6,13 @@ body {
   font-size: 1.6rem;
 }
 
-.container {
+a {
+  cursor: pointer;
+}
 
+.container {
+  max-width: 1460px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px;
 }

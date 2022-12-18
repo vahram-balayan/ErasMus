@@ -1,3 +1,6 @@
+import { Routes, Route, Link, Outlet} from "react-router-dom";
+
+import Home from "pages/Home/Home";
 import "./styles/main.scss";
 
 import Layout from "components/Layout/Layout";
@@ -5,9 +8,12 @@ import Layout from "components/Layout/Layout";
 function App() {
   return (
     <div className="App">
-        <Layout>
-
-        </Layout>
+            <Routes>
+              <Route path="/" element={<Layout />}>
+                <Route index element={<Home />}/>
+                <Route path="*" element={<Home />}/>
+              </Route>
+            </Routes>
     </div>
   );
 }
