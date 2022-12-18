@@ -1,0 +1,19 @@
+@import "../tokens";
+@import "../functions";
+
+$spacing-steps: get($tokens, "spacing", "steps");
+$spacing-prefix: get-custom-property-prefix("spacing");
+
+html {
+  @each $step, $value in $spacing-steps {
+    /* stylelint-disable-next-line custom-property-pattern */
+    --#{$spacing-prefix}-#{$step}: #{$value};
+  }
+
+  //--sp-xs: #{to-rems(2px)};
+  //--sp-s: #{to-rems(4px)};
+  //--sp-m: #{to-rems(8px)};
+  //--sp-l: #{to-rems(16px)};
+  //--sp-xl: #{to-rems(24px)};
+  //--sp-xxl: #{to-rems(32px)};
+}

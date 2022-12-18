@@ -22,7 +22,45 @@ ol, ul, menu {
 }
 
 /* For images to not be able to exceed their container */
-img {
+img,
+picture {
+  display: block;
   max-width: 100%;
 }
 
+:where(button, a) {
+  cursor: pointer;
+}
+
+:where(input, select, textarea, button) {
+  font: inherit;
+  line-height: inherit;
+}
+
+// https://css-tricks.com/standardizing-focus-styles-with-css-custom-properties/
+
+:where(a, button, input, textarea, summary, [tabindex="0"]) {
+  --outline-thickness: max(2px, 0.08em);
+  --outline-style: solid;
+  --outline-color: currentcolor;
+
+  &:focus {
+    outline: var(--outline-thickness) var(--outline-style) var(--outline-color);
+
+    &:not(:focus-visible) {
+      outline: none;
+    }
+  }
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
