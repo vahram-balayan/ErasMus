@@ -23,10 +23,10 @@ const Layout = ({children}) => {
                     </ul>
 
 
-            <div className={styles.container}>
+            <main className={styles.container}>
                 {children}
                 <Outlet />
-            </div>
+            </main>
 
             <Footer/>
         </>
