@@ -1,4 +1,4 @@
-import { Routes, Route, Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import styles from "./Header.module.scss";
 
@@ -7,15 +7,24 @@ const Header = () => {
         <header className={`flex align-center ${styles.header}`}>
             <div className={`container`}>
                 <div className={`flex align-center ${styles.header_wrapper}`}>
-                    <ul>
+                    <ul className={`flex align-center`}>
                         <li>
-                            <Link href="/">Home</Link>
+                            <NavLink to="/">Home</NavLink>
                         </li>
                         <li>
-                            <Link href="/about">About</Link>
+                            <NavLink to="/Projects">Projects</NavLink>
                         </li>
                         <li>
-                            <Link href="/blog">Blog</Link>
+                            <NavLink to="/News">News</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/participants">Creative Participants</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/About">About</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/Contact">Contact</NavLink>
                         </li>
                     </ul>
                 </div>
