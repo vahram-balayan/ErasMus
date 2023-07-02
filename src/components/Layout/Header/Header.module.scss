@@ -1,5 +1,6 @@
 .header {
   display: flex;
+  align-items: center;
   background-color: var(--light-grey);
 
   ul {
@@ -23,6 +24,12 @@
      border-bottom: 2px solid;
     }
   }
+}
+
+.header_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 

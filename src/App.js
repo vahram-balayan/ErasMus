@@ -1,4 +1,4 @@
-import { Routes, Route, } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import Home from "pages/Home/Home";
 import Projects from "pages/Projects/Projects";
@@ -14,17 +14,17 @@ import "./styles/main.scss";
 function App() {
   return (
     <div className="App">
-            <Routes>
-              <Route path="/" element={<Layout />}>
-                <Route index element={<Home />}/>
-                <Route path="/projects" element={<Projects />}/>
-                <Route path="/news" element={<News />}/>
-                <Route path="/participants" element={<Participants />}/>
-                <Route path="/about" element={<About />}/>
-                <Route path="/contact" element={<Contact />}/>
-                <Route path="*" element={<NotFound />}/>
-              </Route>
-            </Routes>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/news" element={<News />} />
+          <Route path="/participants" element={<Participants />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
+        </Route>
+      </Routes>
     </div>
   );
 }
