@@ -15,9 +15,10 @@ a {
   max-width: 1460px;
   width: 100%;
   margin: 0 auto;
-  padding: 30px;
+  padding: 0 30px;
 }
 
 .active {
-  color: aqua;
+    color: var(--brand-color);
 }
+

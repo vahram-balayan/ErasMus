@@ -37,3 +37,48 @@ h6 {
 small {
   @include extended-font-size("sm");
 }
+
+.heading-1 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 81px;
+  text-transform: capitalize;
+}
+
+.subheading-1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: capitalize;
+}
+
+.subheading-2 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  text-transform: capitalize;
+}
+
+.paragraph-1 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.paragraph-2 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.paragraph-3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.paragraph-4 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}

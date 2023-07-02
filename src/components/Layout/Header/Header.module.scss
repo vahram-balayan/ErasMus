@@ -1,23 +1,37 @@
 .header {
   display: flex;
-  background-color: #333;
-  color: #fff;
+  background-color: var(--light-grey);
 
   ul {
     gap: 16px;
+
+    a {
+      transition: var(--transition-duration);
+      border-bottom: 1px solid transparent;
+    }
+  }
+
+  .brand_img_wrapper {
+    width: 160px;
   }
 }
 
-a.active {
-  background-color: blue;
-  border-bottom: 1px solid red;
-}
-
-li {
-  a {
-    text-transform: capitalize;
-    letter-spacing: .4px;
-    transition: .23s;
-    padding-bottom: 8px;
+.header {
+  :global {
+    .active {
+     color: var(--brand-color);
+     border-bottom: 2px solid;
+    }
   }
 }
+
+
+
+// li {
+//   a {
+//     text-transform: capitalize;
+//     letter-spacing: .4px;
+//     transition: .23s;
+//     padding-bottom: 8px;
+//   }
+// }

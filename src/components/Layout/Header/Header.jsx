@@ -6,8 +6,13 @@ const Header = () => {
     return (
         <header className={`flex align-center ${styles.header}`}>
             <div className={`container`}>
-                <div className={`flex align-center ${styles.header_wrapper}`}>
-                    <ul className={`flex align-center`}>
+                <div className={`flex align-center justify-between ${styles.header_wrapper}`}>
+                    <div className={`${styles.brand_img_wrapper}`}>
+                        <NavLink to="/">
+                            <img src="http://creativeyouth.am/static/media/logo.7fd48853.PNG" alt="Craetive Youth" />
+                        </NavLink>
+                    </div>
+                    <ul className={`flex align-center subheading-2`}>
                         <li>
                             <NavLink to="/">Home</NavLink>
                         </li>
