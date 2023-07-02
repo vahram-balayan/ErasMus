@@ -1,0 +1,33 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 450px;
+
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+}
+
+.hero_titles {
+  text-align: center;
+
+  h1 {
+    font-size: 24px;
+    color: #a323bd;
+    margin-bottom: 32px;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 38px;
+    color: #161d86;
+    font-weight: bold;
+  }
+}

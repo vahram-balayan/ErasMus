@@ -1,44 +1,28 @@
-.header {
+.header,
+.header_wrapper {
   display: flex;
   align-items: center;
-  background-color: var(--light-grey);
-
-  ul {
-    gap: 16px;
-
-    a {
-      transition: var(--transition-duration);
-      border-bottom: 1px solid transparent;
-    }
-  }
-
-  .brand_img_wrapper {
-    width: 160px;
-  }
 }
 
 .header {
+  background-color: var(--light-grey);
+
   :global {
     .active {
-     color: var(--brand-color);
-     border-bottom: 2px solid;
+      color: var(--brand-color);
+      border-bottom: 2px solid;
     }
+  }
+}
+
+.brand_img_wrapper {
+  width: 250px;
+
+  a {
+    display: inline-block;
   }
 }
 
 .header_wrapper {
-  display: flex;
-  align-items: center;
   justify-content: space-between;
 }
-
-
-
-// li {
-//   a {
-//     text-transform: capitalize;
-//     letter-spacing: .4px;
-//     transition: .23s;
-//     padding-bottom: 8px;
-//   }
-// }

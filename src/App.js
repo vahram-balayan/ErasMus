@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import "./styles/main.scss";
 
 import Home from "pages/Home/Home";
 import Projects from "pages/Projects/Projects";
@@ -9,19 +10,20 @@ import About from "pages/About/About";
 import NotFound from "pages/NotFound/NotFound";
 import Contact from "pages/Contact/Contact";
 
-import "./styles/main.scss";
+import { PAGES } from "constants";
+
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path={PAGES.HOME.href} element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/news" element={<News />} />
-          <Route path="/participants" element={<Participants />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path={PAGES.PROJECTS.href} element={<Projects />} />
+          <Route path={PAGES.NEWS.href} element={<News />} />
+          <Route path={PAGES.PARTICIPANTS.href} element={<Participants />} />
+          <Route path={PAGES.ABOUT.href} element={<About />} />
+          <Route path={PAGES.CONTACT.href} element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
